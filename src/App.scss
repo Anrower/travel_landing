@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@700&display=swap');
+
+* {
+  $white: #ffffff;
+  $dirty-green: #0d606f;
+  $peach: #f2785c;
+  $peach_50: rgb(95%, 47%, 36%, 50%);
+  $peach_70: rgb(95%, 47%, 36%, 70%);
+  $peach_90: rgb(95%, 47%, 36%, 90%);
+  $font_Aleo: 'Aleo',
+  serif;
+  $font_RHT: 'Red Hat Text',
+  sans-serif;
+  $font_Magra: 'Magra',
+  sans-serif;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3 ease;
+}
+
+a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+a:hover:after,
+a:focus:after {
+  width: 100%;
+}

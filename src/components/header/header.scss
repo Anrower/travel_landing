@@ -1,0 +1,136 @@
+$peach_70: rgb(95%, 47%, 36%, 70%);
+$font_Magra: 'Magra';
+$font_RHT: 'Red Hat Text';
+$white: #ffffff;
+
+.header {
+  background-color: $peach_70;
+  padding: 25px 120px;
+  color: $white;
+  max-height: 125px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+
+  &__title {
+    margin-left: 66px;
+    font-family: $font_Magra;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+
+    &::before {
+      left: 0px;
+      position: absolute;
+      content: '';
+      background-image: url(../../images/Logo.svg);
+      width: 30px;
+      height: 30px;
+      display: block;
+    }
+  }
+}
+
+.navigation {
+  position: relative;
+  z-index: 50;
+  display: flex;
+  gap: 42px;
+  font-family: $font_RHT;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  .burger__btn.close {
+    z-index: 55;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .burger__btn.close span {
+    position: absolute;
+    top: 11px;
+    width: 30px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: $white;
+    transform: scale(0);
+  }
+
+  .burger__btn.close::before {
+    content: '';
+    top: 10px;
+    position: absolute;
+    width: 30px;
+    background-color: $white;
+    height: 2px;
+    border-radius: 1px;
+    transform: rotate(45deg);
+  }
+
+  .burger__btn.close::after {
+    top: 10px;
+    content: '';
+    position: absolute;
+    width: 30px;
+    background-color: $white;
+    height: 2px;
+    border-radius: 1px;
+    transform: rotate(-45deg);
+  }
+
+  .burger__btn.open {
+    z-index: 55;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .burger__btn.open span {
+    position: absolute;
+    top: 11px;
+    width: 30px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: $white;
+  }
+
+  .burger__btn.open::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 30px;
+    background-color: $white;
+    height: 2px;
+    border-radius: 1px;
+  }
+
+  .burger__btn.open::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    background-color: $white;
+    height: 2px;
+    border-radius: 1px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .header {
+    background-color: inherit;
+  }
+
+}

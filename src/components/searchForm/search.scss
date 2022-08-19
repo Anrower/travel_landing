@@ -1,0 +1,33 @@
+$peach: #f2785c;
+$font_Aleo: 'Aleo',
+  serif;
+
+.search {
+  position: relative;
+  width: 100%;
+  font-family: $font_Aleo;
+
+  &__input {
+    padding: 32px 291px 41px 41px;
+    width: 560px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $peach;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    border: none;
+  }
+
+  &__input::placeholder {
+    color: $peach;
+  }
+
+  &__submit {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+  }
+
+}

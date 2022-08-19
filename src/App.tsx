@@ -1,9 +1,10 @@
-import React from 'react';
-import './App.css';
+import './App.scss';
+import Preview from './components/preview/Preview';
 
 function App() {
   return (
     <div className="App">
+      <Preview />
     </div>
   );
 }

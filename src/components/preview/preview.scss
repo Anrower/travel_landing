@@ -1,0 +1,42 @@
+$peach_70: rgb(95%, 47%, 36%, 70%);
+$font_Magra: 'Magra';
+$font_RHT: 'Red Hat Text';
+$white: #ffffff;
+$font_Aleo: 'Aleo',
+  serif;
+
+.preview {
+  font-family: font_Aleo;
+  background-image: url(../../images/preview_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+
+  &__title {
+    letter-spacing: -0.05em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+
+  }
+
+  &__subtitle {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__search-form {
+    padding-bottom: 33px;
+  }
+}
+
+.preview__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 892px;
+  margin: 32px auto 32px;
+  padding-bottom: 221px;
+}
