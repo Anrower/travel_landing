@@ -5,11 +5,13 @@ const Button = (props: IButton) => {
 
   const { title, style_type, bg_img } = props;
 
+
+
   let style = '';
   !style_type ? style = 'primary' : style = style_type;
 
   return (
-    <button className={`button ${style}`}>
+    <button className={`button ${style} ${bg_img}`}>
       {title}
     </button>
   )
