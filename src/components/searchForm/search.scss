@@ -9,7 +9,7 @@ $font_Aleo: 'Aleo',
 
   &__input {
     padding: 32px 291px 41px 41px;
-    width: 560px;
+    width: 892px;
     font-style: italic;
     font-weight: 400;
     font-size: 24px;
@@ -30,4 +30,71 @@ $font_Aleo: 'Aleo',
     right: 18px;
   }
 
+}
+
+@media (max-width: 950px) {
+  .search {
+
+    &__input {
+      width: 650px;
+      padding: 25px 210px 25px 41px;
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    &__input::placeholder {
+      color: $peach;
+    }
+
+    &__submit {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .search {
+
+    &__input {
+      width: 480px;
+      padding: 15px 180px 15px 15px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__input::placeholder {
+      color: $peach;
+    }
+
+    &__submit {
+      position: absolute;
+      top: 10px;
+      left: 326px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .search {
+
+    &__input {
+      width: 340px;
+      padding: 15px 110px 15px 15px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__input::placeholder {
+      color: $peach;
+    }
+
+    &__submit {
+      position: absolute;
+      top: 9px;
+      left: 239px;
+    }
+  }
 }

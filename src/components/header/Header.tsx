@@ -37,6 +37,8 @@ const Header = () => {
                 <a href='/'>Plan Your Trip</a>
                 <a href='/'>Destinations</a>
                 <a href='/'>Travel Stories</a>
+                <a href='/'>Account</a>
+                <a href='/'>Social Media</a>
               </Burger> :
               null}
           </nav>

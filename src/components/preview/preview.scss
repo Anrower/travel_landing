@@ -22,6 +22,7 @@ $font_Aleo: 'Aleo',
   }
 
   &__subtitle {
+    margin: 46px 0;
     font-style: italic;
     font-weight: 400;
     font-size: 20px;
@@ -37,6 +38,62 @@ $font_Aleo: 'Aleo',
   display: flex;
   flex-direction: column;
   max-width: 892px;
-  margin: 32px auto 32px;
+  margin: 32px auto 0px;
   padding-bottom: 221px;
+}
+
+@media (max-width: 950px) {
+  .preview {
+    &__title {
+      font-size: 60px;
+      line-height: 76px;
+      text-align: center;
+    }
+
+    &__search-form {
+      padding-bottom: 33px;
+    }
+  }
+
+  .preview__wrapper {
+    max-width: 650px;
+    padding-bottom: 221px;
+  }
+
+}
+
+@media (max-width: 699px) {
+  .preview {
+    &__title {
+      display: none;
+    }
+
+    &__subtitle {
+      display: none;
+    }
+
+    &__search-form {
+      padding-bottom: 81px;
+    }
+  }
+
+  .preview__wrapper {
+    margin: 67px auto 0px;
+    max-width: 480px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 520px) {
+  .preview {
+    &__search-form {
+      padding-bottom: 61px;
+    }
+  }
+
+  .preview__wrapper {
+    max-width: 340px;
+    margin: 67px auto 0px;
+    padding-bottom: 0px;
+  }
 }

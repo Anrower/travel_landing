@@ -131,6 +131,23 @@ $white: #ffffff;
 @media (max-width: 1200px) {
   .header {
     background-color: inherit;
+    padding: 25px 30px;
+  }
+
+}
+
+@media (max-width: 930px) {
+  .header {
+    background-color: inherit;
+    padding: 25px 30px;
+  }
+
+}
+
+@media (max-width: 699px) {
+  .header {
+    background-color: inherit;
+    padding: 53px 20px 0px;
   }
 
 }

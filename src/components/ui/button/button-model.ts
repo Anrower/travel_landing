@@ -1,5 +1,6 @@
 export interface IButton {
-  title: string,
+  title?: string,
   style_type?: string,
+  bg_img?: string,
 }
 

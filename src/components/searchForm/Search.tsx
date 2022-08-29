@@ -1,4 +1,3 @@
-import React from 'react'
 import '../ui/button/button.scss'
 import './search.scss'
 
