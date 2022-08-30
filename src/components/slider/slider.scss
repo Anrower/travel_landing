@@ -1,0 +1,45 @@
+$peach: #f2785c;
+$peach_70: rgb(95%, 47%, 36%, 70%);
+$font_RHT: 'Red Hat Text',
+  sans-serif;
+
+.slide {
+  position: relative;
+}
+
+.slider__image-title {
+  font-family: $font_RHT;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+}
+
+.swiper>.swiper-wrapper {
+  width: 800px;
+  height: 800px;
+}
+
+.swiper>.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-top: 24px;
+  position: relative;
+  bottom: 0px;
+}
+
+.swiper>.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal>.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $peach_70;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $peach;
+}

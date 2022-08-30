@@ -29,6 +29,20 @@ $peach_90: rgb(95%, 47%, 36%, 90%);
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
 }
 
+.button.arrow_r {
+  position: relative;
+  text-align: end;
+  padding-right: 31px;
+}
+
+.button.arrow_r::before {
+  content: "\2192";
+  font-size: 40px;
+  position: relative;
+  right: 15px;
+  top: 3px
+}
+
 .button.steps-btn {
   width: 100px;
   height: 100px;

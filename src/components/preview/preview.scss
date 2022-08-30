@@ -1,9 +1,8 @@
 $peach_70: rgb(95%, 47%, 36%, 70%);
-$font_Magra: 'Magra';
-$font_RHT: 'Red Hat Text';
+$font_Magra: 'Magra', sans-serif;
+$font_RHT: 'Red Hat Text', sans-serif;
 $white: #ffffff;
-$font_Aleo: 'Aleo',
-  serif;
+$font_Aleo: 'Aleo', serif;
 
 .preview {
   font-family: font_Aleo;

@@ -1,0 +1,37 @@
+$font_RHT: 'Red Hat Text', sans-serif;
+$white: #ffffff;
+$peach: #f2785c;
+
+.destinations {
+  font-family: $font_RHT;
+  padding: 97px 0 0;
+
+  &__title {
+    font-family: $font_RHT;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: $peach;
+    text-align: center;
+  }
+
+  &__slider {
+    margin: 46px 0 84px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 32px auto 0px;
+  }
+
+  &__button {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
