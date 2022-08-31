@@ -4,7 +4,7 @@ $peach_90: rgb(95%, 47%, 36%, 100%);
 .burger {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   right: 0;
   top: -25px;
   transform: translateX(200%);
@@ -37,4 +37,16 @@ $peach_90: rgb(95%, 47%, 36%, 100%);
 
 .burger.active {
   transform: translateX(0);
+}
+
+@media (max-width: 520px) {
+  .burger {
+    &__content {
+      width: 100%;
+      height: 100%;
+      gap: 20px;
+    }
+
+  }
+
 }

@@ -32,6 +32,73 @@ $peach: #f2785c;
     display: flex;
     justify-content: center;
   }
+}
 
+@media (max-width: 950px) {
+  .destinations {
+    padding: 56px 0 0;
 
+    &__title {
+      font-size: 35px;
+      line-height: 42px;
+    }
+
+    &__slider {
+      margin: 46px 0;
+    }
+
+    &__wrapper {
+      margin: 20px auto 0px;
+    }
+
+    &__button {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .destinations {
+    padding: 56px 0 0;
+
+    &__title {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    &__slider {
+      margin: 46px 0;
+    }
+
+    &__wrapper {
+      margin: 20px auto 0px;
+    }
+
+    &__button {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .destinations {
+    padding: 20px 0 0;
+
+    &__title {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &__slider {
+      margin: 16px 0 0;
+    }
+
+    &__wrapper {
+      margin: 20px auto 0px;
+    }
+
+    &__button {
+      margin-bottom: 40px;
+    }
+  }
 }

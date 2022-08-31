@@ -12,10 +12,17 @@ import 'swiper/scss/scrollbar';
 
 export default function Slider() {
 
+  let navigationFlag = false;
+  const screenWidth = window.innerWidth;
+  if (screenWidth <= 520) {
+    navigationFlag = true;
+  }
+
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
+      navigation={navigationFlag}
       slidesPerView={'auto'}
       centeredSlides={true}
       loop={true}
@@ -25,19 +32,19 @@ export default function Slider() {
     >
       <SwiperSlide>
         <div className='slide'>
-          <img src={JapanImg} alt='Japan' />
+          <img className='slider__image' src={JapanImg} alt='Japan' />
           <span className='slider__image-title'>Japan</span>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='slide'>
-          <img src={USAImg} alt='USA' />
+          <img className='slider__image' src={USAImg} alt='USA' />
           <span className='slider__image-title'>USA</span>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='slide'>
-          <img src={SpainImg} alt='Spain' />
+          <img className='slider__image' src={SpainImg} alt='Spain' />
           <span className='slider__image-title'>Spain</span>
         </div>
       </SwiperSlide>
