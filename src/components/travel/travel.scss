@@ -1,0 +1,111 @@
+$font_Magra: 'Magra', sans-serif;
+$font_RHT: 'Red Hat Text', sans-serif;
+$white: #ffffff;
+$font_Aleo: 'Aleo', serif;
+$dirty-green: #0d606f;
+$peach: #f2785c;
+
+.travel {
+  font-family: font_Aleo;
+  background-image: url(../../images/travel_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+
+  &__blur {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__title {
+    margin-top: 173px;
+    position: relative;
+    bottom: 93px;
+    font-family: $font_RHT;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: $peach;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  &__story-list {
+    margin: 0px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__button {
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 950px) {
+  .travel {
+    &__title {
+      margin-top: 153px;
+      position: relative;
+      bottom: 73px;
+      font-size: 35px;
+      line-height: 42px;
+    }
+
+    &__story-list {
+      max-width: 700px;
+      gap: 40px;
+    }
+
+    &__button {
+      margin: 30px auto;
+    }
+  }
+}
+
+@media (max-width: 699px) {
+  .travel {
+    &__title {
+      margin-top: 123px;
+      position: relative;
+      bottom: 53px;
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    &__story-list {
+      max-width: 521px;
+      gap: 30px;
+    }
+
+    &__button {
+      margin: 30px auto;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .travel {
+    &__title {
+      margin-top: 93px;
+      bottom: 43px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &__story-list {
+      max-width: 360px;
+      gap: 20px;
+    }
+
+    &__button {
+      margin: 20px auto;
+    }
+  }
+}

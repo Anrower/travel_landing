@@ -1,7 +1,7 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import JapanImg from '../../images/Japan.jpg';
-import USAImg from '../../images/USA.jpg';
-import SpainImg from '../../images/Spain.jpg';
+import JapanImg from '../../../images/Japan.jpg';
+import USAImg from '../../../images/USA.jpg';
+import SpainImg from '../../../images/Spain.jpg';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './slider.scss'
@@ -27,8 +27,8 @@ export default function Slider() {
       centeredSlides={true}
       loop={true}
       pagination={{ clickable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+    // onSwiper={(swiper) => console.log(swiper)}
+    // onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
         <div className='slide'>

@@ -28,7 +28,6 @@ $peach: #f2785c;
   }
 
   &__button {
-    margin-bottom: 80px;
     display: flex;
     justify-content: center;
   }
@@ -51,9 +50,6 @@ $peach: #f2785c;
       margin: 20px auto 0px;
     }
 
-    &__button {
-      margin-bottom: 40px;
-    }
   }
 }
 
@@ -72,10 +68,6 @@ $peach: #f2785c;
 
     &__wrapper {
       margin: 20px auto 0px;
-    }
-
-    &__button {
-      margin-bottom: 40px;
     }
   }
 }
@@ -97,8 +89,5 @@ $peach: #f2785c;
       margin: 20px auto 0px;
     }
 
-    &__button {
-      margin-bottom: 40px;
-    }
   }
 }

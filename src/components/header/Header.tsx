@@ -1,16 +1,23 @@
-import { useState } from 'react'
-import '../content.scss'
-import Button from '../ui/button/Button'
-import Navigation from '../navigation/Navigation'
-import Burger from '../ui/burger/Burger'
-import './header.scss'
+import { useState } from 'react';
+import '../content.scss';
+import Button from '../ui/button/Button';
+import Navigation from './navigation/Navigation';
+import Burger from '../ui/burger/Burger';
+import './header.scss';
+import Popup from '../ui/popup/Popup';
 
 
 const Header = () => {
   const [burgerActive, setBurgerActive] = useState(false);
+  const [popUpActive, setPopUpActive] = useState(true)
 
   const hasWindow = typeof window !== 'undefined';
   const windowWidth = hasWindow ? window.innerWidth : 1200;
+
+  const accountHandler = () => {
+    setBurgerActive(false);
+    setPopUpActive(true);
+  }
 
   return (
     <header className='header'>
@@ -22,10 +29,10 @@ const Header = () => {
           <nav className='navigation'>
             {windowWidth > 1200 ?
               <Navigation>
-                <a href='/'>How It Works</a>
-                <a href='/'>Plan Your Trip</a>
-                <a href='/'>Destinations</a>
-                <a href='/'>Travel Stories</a>
+                <a href='#planning-form'>How It Works</a>
+                <a href='#trip'>Plan Your Trip</a>
+                <a href='#destinations'>Destinations</a>
+                <a href='#travel'>Travel Stories</a>
               </Navigation> :
               <div className={`burger__btn ${burgerActive ? 'close' : 'open'}`} onClick={() => setBurgerActive(!burgerActive)}>
                 <span />
@@ -33,17 +40,21 @@ const Header = () => {
             }
             {windowWidth < 1200 ?
               <Burger active={burgerActive} setActive={setBurgerActive}>
-                <a href='/'>How It Works</a>
-                <a href='/'>Plan Your Trip</a>
-                <a href='/'>Destinations</a>
-                <a href='/'>Travel Stories</a>
-                <a href='/'>Account</a>
-                <a href='/'>Social Media</a>
+                <a href='#planning-form'>How It Works</a>
+                <a href='#trip'>Plan Your Trip</a>
+                <a href='#destinations'>Destinations</a>
+                <a href='#travel'>Travel Stories</a>
+                <a href=' ' onClick={accountHandler}>Account</a>
+                <a href='#social-media'>Social Media</a>
               </Burger> :
               null}
           </nav>
+          <Popup active={popUpActive} setActive={setPopUpActive}>
+            <h1>Hello World</h1>
+          </Popup>
           {windowWidth > 1200 ?
-            <Button title={'Login'} style_type={'small'} /> :
+            <Button title={'Login'} style_type={'small'}
+              setActive={setPopUpActive} /> :
             null}
         </div>
       </div>

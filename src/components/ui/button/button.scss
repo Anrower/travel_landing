@@ -99,13 +99,11 @@ $peach_90: rgb(95%, 47%, 36%, 90%);
   .button.arrow_r {
     position: relative;
     text-align: end;
-    padding-right: 10px;
+    padding-right: 14px;
   }
 
   .button.arrow_r::before {
-    content: "\2192";
     font-size: 30px;
-    position: relative;
     right: 10px;
     top: 3px
   }
@@ -129,6 +127,11 @@ $peach_90: rgb(95%, 47%, 36%, 90%);
     width: 103px;
     height: 41px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  }
+
+  .button.arrow_r {
+    text-align: end;
+    padding-right: 10px;
   }
 
   .button.steps-btn.byke,
@@ -159,16 +162,8 @@ $peach_90: rgb(95%, 47%, 36%, 90%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
   }
 
-  .button.arrow_r {
-    position: relative;
-    text-align: end;
-    padding-right: 10px;
-  }
-
   .button.arrow_r::before {
-    content: "\2192";
     font-size: 20px;
-    position: relative;
     right: 5px;
     top: 2px
   }

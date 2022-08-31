@@ -1,4 +1,4 @@
-import '../ui/button/button.scss'
+import '../../ui/button/button.scss'
 import './search.scss'
 
 import { useForm, SubmitHandler } from "react-hook-form";

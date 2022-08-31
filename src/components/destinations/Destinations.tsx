@@ -1,11 +1,11 @@
 import './destinations.scss';
 import '../content.scss'
-import Slider from '../slider/Slider';
+import Slider from '../ui/slider/Slider';
 import Button from '../ui/button/Button';
 
 const Destinations = () => {
   return (
-    <div className="destinations">
+    <div id='destinations' className="destinations">
       <div className='content'>
         <div className="destinations__wrapper">
           <h2 className="destinations__title">POPULAR DESTINATIONS</h2>

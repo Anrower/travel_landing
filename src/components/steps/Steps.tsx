@@ -6,7 +6,7 @@ import Button from '../ui/button/Button'
 
 const Steps = () => {
   return (
-    <div className='steps'>
+    <div id='trip' className='steps'>
       <div className='content'>
         <div className='steps__wrapper'>
           <h2 className='steps__title'>3 STEPS TO THE PERFECT TRIP</h2>
