@@ -2,18 +2,19 @@ $peach_70: rgb(95%, 47%, 36%, 70%);
 $peach_90: rgb(95%, 47%, 36%, 100%);
 
 .popup {
+  overflow: scroll;
   z-index: 50;
   position: fixed;
   right: 0;
   width: 100%;
-  height: 105%;
-  top: -25px;
+  height: 170%;
+  top: 0;
   transform: translateY(-200%);
   transition: all 0.2s (ease-in-out);
 
   &__content {
     left: calc((100% - 650px) /2);
-    top: 200px;
+    top: 120px;
     padding: 25px 45px;
     position: absolute;
     display: flex;
@@ -30,7 +31,7 @@ $peach_90: rgb(95%, 47%, 36%, 100%);
 
   .blur {
     width: 100vw;
-    height: 105%;
+    height: 170%;
     backdrop-filter: blur(2px);
     position: absolute;
   }
