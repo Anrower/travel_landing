@@ -196,6 +196,25 @@ $peach_90: rgb(95%, 47%, 36%, 90%);
     transform: scale(0.7);
   }
 
+  .button.signInWith {
+    height: 46px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .button.primary.register__submit {
+    font-size: 18px;
+    line-height: 20px;
+    height: 46px;
+  }
+
+  .button.signInWith.facebook::before,
+  .button.signInWith.google::before {
+    top: 12px;
+    left: 80px;
+  }
+
 }
 
 @media (max-width: 520px) {
@@ -222,5 +241,24 @@ $peach_90: rgb(95%, 47%, 36%, 90%);
     font-size: 20px;
     right: 5px;
     top: 2px
+  }
+
+  .button.signInWith {
+    height: 36px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .button.primary.register__submit {
+    font-size: 14px;
+    line-height: 16px;
+    height: 36px;
+  }
+
+  .button.signInWith.facebook::before,
+  .button.signInWith.google::before {
+    top: 7px;
+    left: 40px;
   }
 }

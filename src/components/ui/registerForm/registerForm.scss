@@ -9,6 +9,7 @@ $dirty-green: #0d606f;
   font-family: $font_Aleo;
 
   &__title {
+    margin-top: 25px;
     text-align: center;
     font-family: $font_Aleo;
     font-style: normal;
@@ -71,6 +72,7 @@ $dirty-green: #0d606f;
   }
 
   &>div>label {
+    margin-left: 5px;
     font-family: $font_Aleo;
     font-style: normal;
     font-weight: 400;
@@ -101,15 +103,122 @@ $dirty-green: #0d606f;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
     border: none;
-    // box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
-  }
-
-  &__input::placeholder {
-    color: $peach;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
   }
 
   &__submit {
     margin-top: 25px;
   }
 
+}
+
+@media (max-width: 699px) {
+  .register {
+
+    &__title {
+      margin-top: 15px;
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    &__divider {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 20px;
+
+      &>span::before {
+        content: '';
+        width: 180px;
+      }
+
+      &>span::after {
+        content: '';
+        width: 180px;
+      }
+    }
+
+    &__with-social {
+      margin-top: 20px;
+      gap: 15px;
+    }
+
+    &>div>label {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__error-msg {
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &__input {
+      margin-top: 5px;
+      padding: 15px;
+      height: 46px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__submit {
+      margin-top: 25px;
+    }
+
+  }
+}
+
+@media (max-width: 520px) {
+  .register {
+
+    &__title {
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &__divider {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 16px;
+
+      &>span::before {
+        content: '';
+        width: 140px;
+      }
+
+      &>span::after {
+        content: '';
+        width: 140px;
+      }
+    }
+
+    &__with-social {
+      margin-top: 15px;
+      gap: 10px;
+    }
+
+    &>div>label {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__error-msg {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__input {
+      padding: 10px;
+      height: 36px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__submit {
+      margin-top: 15px;
+    }
+
+  }
 }
