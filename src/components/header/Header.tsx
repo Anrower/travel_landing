@@ -5,6 +5,7 @@ import Navigation from './navigation/Navigation';
 import Burger from '../ui/burger/Burger';
 import './header.scss';
 import Popup from '../ui/popup/Popup';
+import Login from './loginForm/Login';
 
 
 const Header = () => {
@@ -50,7 +51,7 @@ const Header = () => {
               null}
           </nav>
           <Popup active={popUpActive} setActive={setPopUpActive}>
-            <h1>Hello World</h1>
+            <Login />
           </Popup>
           {windowWidth > 1200 ?
             <Button title={'Login'} style_type={'small'}

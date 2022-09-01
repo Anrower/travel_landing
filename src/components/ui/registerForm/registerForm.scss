@@ -1,0 +1,115 @@
+$peach: #f2785c;
+$font_Aleo: 'Aleo', serif;
+$dirty-green: #0d606f;
+
+.register {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: $font_Aleo;
+
+  &__title {
+    text-align: center;
+    font-family: $font_Aleo;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: $dirty-green;
+  }
+
+  &__divider {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(13, 96, 111, 0.5);
+
+    &>span {
+      margin: 0 auto;
+      width: 40px;
+      display: block;
+    }
+
+
+    &>span::before {
+      content: '';
+      top: 50%;
+      left: 0;
+      display: block;
+      position: absolute;
+      width: 255px;
+      height: 1px;
+      background: rgba(13, 96, 111, 0.5);
+    }
+
+    &>span::after {
+      content: '';
+      top: 50%;
+      right: 0;
+      display: block;
+      position: absolute;
+      width: 255px;
+      height: 1px;
+      background: rgba(13, 96, 111, 0.5);
+    }
+  }
+
+
+  &__with-social {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &>div {
+    width: 100%;
+  }
+
+  &>div>label {
+    font-family: $font_Aleo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $dirty-green;
+  }
+
+  &__error-msg {
+    text-align: center;
+    margin-top: 10px;
+    max-width: 90%;
+    font-size: 20px;
+    line-height: 24px;
+    color: tomato;
+  }
+
+  &__input {
+    margin-top: 5px;
+    padding: 15px;
+    width: 100%;
+    height: 54px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: $dirty-green;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    border: none;
+    // box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+  }
+
+  &__input::placeholder {
+    color: $peach;
+  }
+
+  &__submit {
+    margin-top: 25px;
+  }
+
+}
